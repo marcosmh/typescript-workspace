@@ -27,7 +27,6 @@
     "exactOptionalPropertyTypes": true,
 
     // Style Options
-    // "noImplicitOverride": true,
     // "noUnusedLocals": true,
     // "noFallthroughCasesInSwitch": true,
     // "noPropertyAccessFromIndexSignature": true,
@@ -35,6 +34,7 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "strictNullChecks": true,
+    "noImplicitOverride": true,
 
     // Recommended Options
     "strict": true,
