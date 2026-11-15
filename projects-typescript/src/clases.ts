@@ -1,18 +1,20 @@
 // Clases
 
 class Personaje {
-    readonly id: number;
-    name: string;
-    nivel: number;
-    private _hp: number;
+    
     profesion?: string;
 
+    constructor(
+        readonly id: number, 
+        public name: string, 
+        public nivel: number, 
+        private _hp: number
+    ) {
+        
+    }
 
-    constructor(id: number, name: string, nivel: number, hp: number) {
-        this.id = id;
-        this.name = name;
-        this.nivel = nivel;
-        this._hp = hp;
+    getHP(): number {
+        return this._hp;
     }
 
     subirNivel(): number {
@@ -32,6 +34,7 @@ class Personaje {
 const personaje = new Personaje(1, 'Anakin', 10, 100);
 console.log(personaje);
 console.log("Actualizado: ", personaje);
+console.log("HP: ", personaje.getHP() );
 
 if(personaje instanceof Personaje) {
     console.log("true");
