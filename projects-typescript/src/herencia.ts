@@ -22,8 +22,8 @@ class DatosBasicos {
     constructor(
         public name: string,
         public desc: string,
-        public created_at: Date,
-        public created_by: number
+        protected created_at: Date,
+        protected created_by: number
     ) {}
 
     get fullYear() {
