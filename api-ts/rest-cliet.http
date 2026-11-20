@@ -1,0 +1,14 @@
+@baseUrl = http://localhost:3000
+
+### 1. Probar GET /
+GET {{baseUrl}}/
+Accept: text/plain
+
+### 2. Probar POST / con JSON
+POST {{baseUrl}}/
+Content-Type: application/json
+
+{
+  "id": "1",
+  "name": "Hola Mundo"
+}
